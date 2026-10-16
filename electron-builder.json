@@ -1,0 +1,22 @@
+{
+  "appId": "com.timberdoors.billing",
+  "productName": "Timber & Door Billing",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": ["portable", "dir", "nsis"]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Timber Billing"
+  }
+}
